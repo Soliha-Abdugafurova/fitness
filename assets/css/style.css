@@ -728,6 +728,7 @@ body {
 .blog .section-subtitle { margin-inline: auto; }
 
 .blog-card {
+  cursor: pointer;
   background-color: var(--white);
   border: 1px solid var(--light-gray);
   border-radius: var(--radius-10);
@@ -735,15 +736,18 @@ body {
   overflow: hidden;
 }
 
-.blog-card .card-banner { position: relative; }
+.blog-card .card-banner { position: relative; 
+cursor: pointer; }
 
-.blog-card .card-banner img { transition: var(--transition-2); }
+.blog-card .card-banner img { cursor: pointer; transition: var(--transition-2); }
 
 .blog-card:is(:hover, :focus) .card-banner img {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .blog-card .card-meta {
+  cursor: pointer;
   background-color: var(--coquelicot);
   color: var(--white);
   position: absolute;
@@ -755,7 +759,7 @@ body {
   text-transform: uppercase;
 }
 
-.blog-card .card-content { padding: 25px; }
+.blog-card .card-content { cursor: pointer; padding: 25px; }
 
 .blog-card .card-title { transition: var(--transition-1); }
 
